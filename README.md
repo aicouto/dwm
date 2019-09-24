@@ -18,4 +18,7 @@ done &
 
 # papel de parede
 nitrogen --restore
+
+# alarme
+alarm-clock-applet
 ```
