@@ -1,6 +1,6 @@
 # dwm 6.2
 ## Instalar
-    sh make
+    git clone https://github.com/aicoutos/dwm.git && cd dwm && sh make
 
 ## Configurações
     nano config.h
