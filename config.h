@@ -28,7 +28,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ NULL,         NULL,       "Firefox",  1,          False,      -1 },
-	{ NULL,         NULL,       "Atom",     2,          False,      -1 },
+	{ NULL,         NULL,       "Visual Studio Code",     2,          False,      -1 },
 };
 
 /* layout(s) */
