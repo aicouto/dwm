@@ -12,7 +12,7 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 
 # relógio
 while true; do
-    xsetroot -name " $(date +"%A, %d-%b-%Y %H:%M") "
+    xsetroot -name " $(date +"%A, %d.%b.%Y %H:%M") "
     sleep 1s    # atualiza a cada 1 segundo
 done &
 
