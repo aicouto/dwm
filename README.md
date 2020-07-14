@@ -10,11 +10,12 @@
 # resolve o bug de apps java
 export _JAVA_AWT_WM_NONREPARENTING=1 
 
-# relógio
+# bateria, calendário e relógio
 while true; do
-    status="$(acpi -b && echo "|" && date +"%A, %d.%b.%Y %H:%M")"
+    bat="$(cat /sys/class/power_supply/BAT0/capacity)"
+    status="$(echo "$bat%, " && date +"%A, %d.%b.%Y %H:%M")" 
     xsetroot -name " $(echo $status | xargs) "
-    sleep 1s    # atualiza a cada 1 segundo
+    sleep 2s    # atualiza a cada 1 segundo
 done &
 
 # papel de parede
