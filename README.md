@@ -13,7 +13,7 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 # bateria, calendário e relógio
 while true; do
     bat="$(cat /sys/class/power_supply/BAT0/capacity)"
-    status="$(date +"%A, %d.%b.%Y %H:%M" && echo " $bat%")"
+    status="$(echo "$bat% ~" && date +"%A, %d.%b.%Y %H:%M")"
     xsetroot -name " $(echo $status | xargs) "
     sleep 1s    # atualiza a cada 1 segundo
 done &
