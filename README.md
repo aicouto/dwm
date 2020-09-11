@@ -6,6 +6,7 @@
     nano config.h
 
 ## .profile
+
 ```bash
 # resolve o bug de apps java
 export _JAVA_AWT_WM_NONREPARENTING=1 
